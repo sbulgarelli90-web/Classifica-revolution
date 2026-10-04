@@ -1,0 +1,23 @@
+CLASSIFICA REVOLUTION - COLLEGAMENTO AUTOMATICO ALL'EXCEL
+
+COME SI USA
+1. Tenga nella stessa cartella questi file:
+   - Classifica Revolution - corretto.xlsx
+   - classifica_revolution.html
+   - aggiorna_classifica.py
+   - Avvia Classifica Revolution.bat
+2. Per aggiornare i dati, modifichi normalmente l'Excel e lo salvi.
+3. Avvii "Avvia Classifica Revolution.bat".
+4. La dashboard viene aperta nel browser e legge i dati aggiornati dall'Excel.
+
+AGGIORNAMENTO AUTOMATICO MENTRE LA DASHBOARD E' APERTA
+Se l'Excel viene modificato e salvato mentre la dashboard e' gia' aperta, il sistema controlla il file ogni 3 secondi. Quando rileva una modifica, rigenera i dati e ricarica la pagina.
+
+IMPORTANTE
+- L'Excel e' la fonte dei dati: non modifichi manualmente i dati incorporati nell'HTML.
+- La grafica e le funzioni della dashboard restano nell'HTML.
+- Il collegamento funziona quando la dashboard viene avviata dal file .bat; aprire direttamente l'HTML con doppio clic non attiva il collegamento automatico all'Excel.
+- Alla prima esecuzione, se necessario, il launcher installa automaticamente il componente Python "openpyxl".
+
+PER IL GIRO DELL'EMILIA 2026
+Aggiorni il risultato nell'Excel e salvi. Se la dashboard e' aperta tramite il launcher, verra' aggiornata automaticamente.

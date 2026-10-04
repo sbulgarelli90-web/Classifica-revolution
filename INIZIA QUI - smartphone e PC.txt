@@ -1,0 +1,7 @@
+1) Metta tutta questa cartella dentro OneDrive.
+2) Sul telefono apra "Classifica Revolution - corretto.xlsx" con Microsoft Excel.
+3) Modifichi e salvi.
+4) Sul PC avvii "Avvia Classifica Revolution.bat".
+5) Le modifiche dell'Excel vengono recepite automaticamente dalla dashboard.
+
+NON sposti fuori dalla cartella il file Excel: HTML, Python ed Excel devono restare insieme sul PC.

@@ -1,0 +1,37 @@
+CLASSIFICA REVOLUTION - VERSIONE MULTI DISPOSITIVO
+
+OBIETTIVO
+Il file Excel rimane la fonte principale della classifica. La cartella puo' essere salvata in OneDrive, cosi' lo stesso Excel puo' essere modificato da PC, tablet e smartphone.
+
+CONFIGURAZIONE UNA SOLA VOLTA (PC)
+1. Installare OneDrive e accedere con il proprio account Microsoft.
+2. Creare una cartella dentro OneDrive, ad esempio:
+   OneDrive\Classifica Revolution
+3. Copiare IN QUESTA CARTELLA tutti i file del presente pacchetto.
+4. Attendere che OneDrive completi la sincronizzazione.
+5. Sul PC aprire "Avvia Classifica Revolution.bat".
+
+COME MODIFICARE LA CLASSIFICA DALLO SMARTPHONE
+1. Installare l'app Microsoft Excel sul telefono.
+2. Accedere con LO STESSO account Microsoft usato da OneDrive.
+3. Aprire il file "Classifica Revolution - corretto.xlsx" dalla cartella OneDrive\Classifica Revolution.
+4. Modificare normalmente i dati.
+5. Salvare il file.
+
+COSA SUCCEDE DOPO
+- OneDrive sincronizza la modifica sul PC.
+- Se la dashboard e' aperta tramite "Avvia Classifica Revolution.bat", rileva la modifica dell'Excel e aggiorna automaticamente i dati.
+- Non bisogna modificare manualmente l'HTML.
+
+DA UN ALTRO PC
+Installare OneDrive, usare lo stesso account e attendere la sincronizzazione della cartella. Poi eseguire "Avvia Classifica Revolution.bat".
+
+IMPORTANTE
+- Non creare copie diverse dell'Excel: deve esserci un solo file principale nella cartella OneDrive.
+- Per evitare conflitti, non modificare lo stesso Excel contemporaneamente da due dispositivi.
+- Il collegamento automatico Excel -> dashboard richiede il launcher sul PC.
+- Lo smartphone serve principalmente per modificare i dati nell'Excel tramite l'app Excel.
+- La dashboard HTML attuale non viene pubblicata automaticamente su Internet: per usarla sul telefono come dashboard web sarebbe necessario un ulteriore passaggio di pubblicazione online.
+
+IN CASO DI AGGIORNAMENTO DATI
+Modificare l'Excel, salvare e lasciare che OneDrive completi la sincronizzazione. Sul PC la dashboard si aggiornera' da sola se e' stata avviata con il launcher.
