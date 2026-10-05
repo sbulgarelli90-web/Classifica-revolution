@@ -1,0 +1,41 @@
+name: Aggiorna Classifica Revolution
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Classifica Revolution - corretto.xlsx"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il repository
+        uses: actions/checkout@v4
+
+      - name: Installa Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa openpyxl
+        run: pip install openpyxl
+
+      - name: Genera il dashboard dall'Excel
+        run: python aggiorna_classifica.py
+
+      - name: Aggiorna index.html
+        run: cp classifica_revolution.html index.html
+
+      - name: Salva il nuovo dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html classifica_revolution.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Aggiorna Classifica Revolution dall'Excel"
+          git push
